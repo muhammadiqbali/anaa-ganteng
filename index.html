@@ -13,15 +13,42 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+         :root {
+            --primari-color: white;
+            --secondary-color: #1b1a29;
+        }
+        
+        .dark-theme {
+            --primari-color: #1b1a29;
+            --secondary-color: white;
+        }
+        
+        #icon {
+            width: 20px;
+            cursor: pointer;
+        }
+        
+        nav ul {
+            flex: 1;
+            text-align: right;
+        }
+        
+        body {
+            background-color: var(--primari-color);
+            color: var(--secondary-color);
+        }
+    </style>
 
 </head>
 
-<body class="bg-light">
+<body>
     <!-- NAVBAR START -->
     <nav class="navbar navbar-light fixed-top bg-transparent shadow-sm">
         <div class="container-lg">
             <a class="navbar-brand text-success fw-bold fs-4" href="#">H.i</a>
             <div class="dropdown">
+                <img src="img/moon.png" id="icon">
                 <button class="btn btn-secondary btn-success px-3" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-bars"></i></button>
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
                     <li>
@@ -44,7 +71,6 @@
         </div>
     </nav>
     <!-- NAVBAR END -->
-
     <!-- Home Section Start -->
     <section class="home py-5" id="home">
         <div class="container-lg">
@@ -56,10 +82,10 @@
                 </div>
                 <div class="col-md-6 mt-5 mt-md-0 order-md-first">
                     <div class="home-text">
-                        <p class="text-dark mb-1">Hello I'm a</p>
+                        <p class="mb-1">Hello I'm a</p>
                         <h1> <span class="text-success text-uppercase fs-1 fw-bold animate"></span></h1>
                         <h2 class="fs-4">Anna Abbe</h2>
-                        <p class="mt-4 text-muted">“Think Thousand times before taking a decision But - After taking decision never turn back even if you get Thousand difficulties!!” ― Adolf Hitler</p>
+                        <p class="mt-4">“Think Thousand times before taking a decision But - After taking decision never turn back even if you get Thousand difficulties!!” ― Adolf Hitler</p>
                         <a href="#portfolio" class="btn btn-success px-3 mt-3">My Work</a>
                     </div>
                 </div>
@@ -82,13 +108,13 @@
                 <div class="col-md-6">
                     <div class="about-text" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100">
                         <h3 class="fs-4 mb-3">Hello, I'm</h3>
-                        <p class="text-muted">Muhammad iqbal. I consider myself a good man. I am passionate about my work. Because I love what I do, I have a steady source of motivation that drives me to do my best. In my last job, this passion led me to challenge myself daily
+                        <p>Muhammad iqbal. I consider myself a good man. I am passionate about my work. Because I love what I do, I have a steady source of motivation that drives me to do my best. In my last job, this passion led me to challenge myself daily
                             and learn new skills that helped me to do better work. For example, I taught myself how to use Photoshop to improve the quality of our photos and graphics. I soon became the go-to person for any design needs. </p>
                     </div>
                     <div class="row text-center text-uppercase my-3">
                         <div class="col-sm-4">
                             <div class="icon fs-4">
-                                <i class="fas fa-briefcase"></i>
+                                <i class="fas fa-briefcase text-info"></i>
                             </div>
                             <div class="fact-item">
                                 <h4 class="count">100</h4>
@@ -97,7 +123,7 @@
                         </div>
                         <div class="col-sm-4">
                             <div class="icon fs-4">
-                                <i class="far fa-smile-wink"></i>
+                                <i class="far fa-smile-wink text-warning"></i>
                             </div>
                             <div class="fact-item">
                                 <h4 class="count">235</h4>
@@ -106,7 +132,7 @@
                         </div>
                         <div class="col-sm-4">
                             <div class="icon fs-4">
-                                <i class="fas fa-user-clock"></i>
+                                <i class="fas fa-user-clock text-danger"></i>
                             </div>
                             <div class="fact-item">
                                 <h4 class="count">3301</h4>
@@ -182,7 +208,7 @@
             </div>
             <div class="row text-center">
                 <div class="col-md-6 col-lg-4 mb-4" data-aos="zoom-in" data-aos-duration="1000">
-                    <div class="service-item shadow-sm p-4 rounded bg-white">
+                    <div class="service-item shadow p-4 rounded">
                         <div class="icon my-3 text-success fs-2">
                             <i class="fas fa-code"></i>
                         </div>
@@ -192,7 +218,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-4" data-aos="zoom-in" data-aos-duration="1000">
-                    <div class="service-item shadow-sm p-4 rounded bg-white">
+                    <div class="service-item shadow p-4 rounded">
                         <div class="icon my-3 text-success fs-2">
                             <i class="fas fa-lightbulb"></i>
                         </div>
@@ -201,7 +227,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-4" data-aos="zoom-in" data-aos-duration="1000">
-                    <div class="service-item shadow-sm p-4 rounded bg-white">
+                    <div class="service-item shadow p-4 rounded">
                         <div class="icon my-3 text-success fs-2">
                             <i class="fas fa-image"></i>
                         </div>
@@ -306,7 +332,7 @@
                         </ol>
                         <div class="carousel-inner p1">
                             <!-- testi item start -->
-                            <div class="testi-item carousel-item active bg-white shadow-sm rounded p-4 mb-5">
+                            <div class="testi-item carousel-item active shadow rounded p-4 mb-5">
                                 <div class="testi-author-info d-flex align-items-center">
                                     <img src="img/testimonials/1.jpg" class="img-thumbnail rounded-circle" alt="img">
                                     <div class="author ms-3">
@@ -325,7 +351,7 @@
                             </div>
                             <!-- testi item end -->
                             <!-- testi item start -->
-                            <div class="testi-item carousel-item bg-white shadow-sm rounded p-4 mb-5">
+                            <div class="testi-item carousel-item shadow rounded p-4 mb-5">
                                 <div class="testi-author-info d-flex align-items-center">
                                     <img src="img/testimonials/2.jpg" class="img-thumbnail rounded-circle" alt="img">
                                     <div class="author ms-3">
@@ -345,7 +371,7 @@
                             </div>
                             <!-- testi item end -->
                             <!-- testi item start -->
-                            <div class="testi-item carousel-item bg-white shadow-sm rounded p-4 mb-5">
+                            <div class="testi-item carousel-item shadow rounded p-4 mb-5">
                                 <div class="testi-author-info d-flex align-items-center">
                                     <img src="img/testimonials/3.jpg" class="img-thumbnail rounded-circle" alt="img">
                                     <div class="author ms-3">
@@ -533,7 +559,17 @@
                 .catch(error => console.error('Error!', error.message))
         })
     </script>
-
+    <script>
+        var icon = document.getElementById("icon");
+        icon.onclick = function() {
+            document.body.classList.toggle('dark-theme');
+            if (document.body.classList.contains('dark-theme')) {
+                icon.src = "img/sun.png";
+            } else {
+                icon.src = "img/moon.png";
+            }
+        }
+    </script>
 
 </body>
 
